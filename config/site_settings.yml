@@ -131,6 +131,16 @@ users:
     default: false
   github_client_id: ''
   github_client_secret: ''
+  enable_saml_logins:
+    client: true
+    default: false
+  saml_assertion_consumer_service_url: ''
+  saml_issuer: ''
+  saml_idp_sso_target_url: ''
+  saml_idp_sso_target_url_runtime_params: ''
+  saml_idp_cert: ''
+  saml_idp_cert_fingerprint: ''
+  saml_name_identifier_format: ''
   enable_sso:
     client: true
     default: false

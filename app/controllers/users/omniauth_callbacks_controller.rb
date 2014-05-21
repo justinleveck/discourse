@@ -10,7 +10,8 @@ class Users::OmniauthCallbacksController < ApplicationController
     Auth::OpenIdAuthenticator.new("google", "https://www.google.com/accounts/o8/id", trusted: true),
     Auth::OpenIdAuthenticator.new("yahoo", "https://me.yahoo.com", trusted: true),
     Auth::GithubAuthenticator.new,
-    Auth::TwitterAuthenticator.new
+    Auth::TwitterAuthenticator.new,
+    Auth::SamlAuthenticator.new,
   ]
 
   skip_before_filter :redirect_to_login_if_required
